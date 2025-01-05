@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@solana/spl-token": "^0.4.9",
     "@types/bs58": "^4.0.4",
     "@types/node": "^20",
     "@types/react": "^19",

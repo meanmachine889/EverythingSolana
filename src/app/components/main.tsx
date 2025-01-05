@@ -14,6 +14,7 @@ import Airdrop from "./Airdrop";
 import Balance from "./Balance";
 import SendTokens from "./sendTokens";
 import SignMsg from "./signMessage";
+import Launchpad from "./launchpad";
 
 export default function Main() {
   return (
@@ -32,8 +33,9 @@ export default function Main() {
                 </div>
               </div>
               <div className="flex p-7 py-6 flex-col items-center gap-7 justify-start w-[80%]">
-                {/* <Launchpad /> */}
+                
                 <Balance />
+                <Launchpad />
                 <SendTokens />
                 <Airdrop />
                 <SignMsg />

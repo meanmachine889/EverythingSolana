@@ -37,12 +37,12 @@ export default function Balance() {
           {wallet.publicKey ? (
             <>
               <p className="text-gray-300 text-xl">
-                <span className="text-gray-400 text-lg">Public Key</span> :{" "}
+                <span className="text-gray-400 text-lg">Public Key</span>{" "}<br/>
                 {wallet.publicKey!.toBase58()}
               </p>
               <p className="text-gray-300 text-xl">
                 {" "}
-                <span className="text-gray-400 text-lg">Balance</span> :{" "}
+                <span className="text-gray-400 text-lg">Balance</span>{" "}<br/>
                 {Balance} <span className="text-gray-400 text-lg">SOL</span>
               </p>
             </>
