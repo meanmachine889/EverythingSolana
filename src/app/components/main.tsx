@@ -23,17 +23,18 @@ export default function Main() {
         <WalletProvider wallets={[]} autoConnect>
           <WalletModalProvider>
             <div className="flex flex-col h-[100vh] justify-start p-9 gap-[4rem] items-center">
-              <div className="flex justify-between w-[80%] px-5">
-                <div className="text-3xl font-medium flex gap-2 items-center">
-                  <Pizza size={26} />
-                  furiyash
-                </div>
-                <div className="flex gap-3">
-                  <WalletMultiButton className="" />
+              <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex flex-col sm:flex-row justify-between items-center gap-4 py-4">
+                  <div className="text-2xl sm:text-3xl font-medium flex items-center gap-2">
+                    <Pizza size={26} />
+                    <span>furiyash</span>
+                  </div>
+                  <div className="w-full sm:w-auto">
+                    <WalletMultiButton className="w-full sm:w-auto" />
+                  </div>
                 </div>
               </div>
-              <div className="flex p-7 py-6 flex-col items-center gap-7 justify-start w-[80%]">
-                
+              <div className="flex md:p-7 py-6 flex-col items-center gap-7 justify-start md:w-[80%]">
                 <Balance />
                 <Launchpad />
                 <SendTokens />

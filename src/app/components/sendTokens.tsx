@@ -36,11 +36,11 @@ export default function SendTokens() {
   return (
     <div className="w-full h-fit px-5 border rounded-xl py-5">
       <div className="space-y-6 h-fit">
-        <div className="flex justify-between w-[100%]">
-          <p className="self-start text-3xl">Transfer Solana</p>
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <p className="text-2xl sm:text-3xl font-normal">Transfer Solana</p>
           <Button
             onClick={sendTransaction}
-            className=""
+            className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90"
           >
             Send
           </Button>
